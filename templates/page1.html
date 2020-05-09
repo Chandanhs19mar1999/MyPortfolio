@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .mySlides {display:none;}
+
+            .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                   }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <title>chandanhs19mar1999</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/resume">My Resume</a>
+            <div class="topnav-right">
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <i><h2 style="color: darkmagenta;">Hi There, I'm Chandan H S</h2></i>
+        <i><h2 style="color: darkmagenta;">3rd year Information science and engineering student at SIT,Tumkur.</h2></i>
+       <i><h1 style="color:gold; text-align: center;">"Because Every PICTURE tells a STORY"</h1></i>
+        <div class="center">
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="/static/images/imga.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgb.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgc.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgd.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imge.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgf.JPG" style="width:100%">
+                <img class="mySlides" src="/static/images/imgg.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgh.JPG" style="width:100%">
+                <img class="mySlides" src="/static/images/imgi.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgj.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgk.jpg" style="width:100%">
+                <img class="mySlides" src="/static/images/imgl1.png" style="width:100%">
+                <img class="mySlides" src="/static/images/imgm1.png" style="width:100%">
+                <img class="mySlides" src="/static/images/imgn1.png" style="width:100%">
+                <img class="mySlides" src="/static/images/imgo1.png" style="width:100%">
+                <img class="mySlides" src="/static/images/imglast.JPG" style="width:100%">
+            </div>
+        </div>
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2500); // Change image every 2 seconds
+        }
+        </script>
+    </body>
+</html>
